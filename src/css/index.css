@@ -8,15 +8,23 @@ a {
 }
 
 body {
-    margin-top : 2%;
-    margin-bottom : 2%;
-    margin-left : 5%;
-    margin-right : 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+/* top */
 .top {
     display: block;
-    text-align: center;
+}
+
+.top .title {
+    display: block;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
 }
 
 .top .title img {
@@ -38,68 +46,78 @@ body {
 
 .top .main-nav {
     display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    text-align: left;
+
+    background-color: aliceblue;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .top .main-nav .main-nav-item {
     display: inline-block;
+
+    font-size: 15px;
+
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .middle {
     display: flex;
+    height: 85%;
 }
 
+/* side-bar */
 .middle .side-bar {
     display: inline-block;
-    border-right: 2px solid black;
+    
+    width: 300px;
 
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    border-right: 1px solid black;
+    padding-left:15px;
 }
 
 .middle .side-bar .nav-group {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    font-size: 18px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .middle .side-bar .nav-group .group-name {
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    font-size: 20px;
     font-weight: bold;
+    
+    margin-bottom: 10px;
 }
 
 .middle .side-bar .nav-group .nav-itme {
-    margin-top: 10px;
+    padding-left: 10px;
     margin-bottom: 10px;
-
-    font-size: 18px;
 }
 
+/* main */
 .middle .main {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: auto;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+/* footer */
 .bottom {
-    border-top: 2px solid black;
+    border-top: 1px solid black;
 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     font-size: 20px;
     font-weight: bold;
