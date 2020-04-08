@@ -101,7 +101,7 @@ body {
 }
 
 /* main */
-.middle .main {
+#main-content {
     width: 82%;
     
     padding-left: 20px;
