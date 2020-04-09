@@ -73,7 +73,7 @@ body {
 }
 
 /* side-bar */
-.middle .side-bar {
+#sidebar {
     display: inline-block;
 
     width: 18%;
@@ -82,22 +82,24 @@ body {
     padding-left:15px;
 }
 
-.middle .side-bar .nav-group {
+#sidebar .nav-group {
     font-size: 18px;
 
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.middle .side-bar .nav-group .group-name {
+#sidebar .nav-group .group-name {
     font-weight: bold;
     
     margin-bottom: 10px;
 }
 
-.middle .side-bar .nav-group .nav-itme {
+#sidebar .nav-group .nav-item {
     padding-left: 10px;
     margin-bottom: 10px;
+
+    display:block;
 }
 
 /* main */
