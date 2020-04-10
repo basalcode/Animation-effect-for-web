@@ -1,0 +1,34 @@
+<h2>BOOK MARKS</h2>
+
+<Section class="bookmark-item">
+    <h3>Book Mark 1</h3>
+    <p>
+        This link is ...<br>
+    </p>
+    <div class="bookmark-link">Link : <a href="#">www.aaa.com</a></div>
+</Section>
+
+<Section class="bookmark-item">
+    <h3>Book Mark 2</h3>
+    <p>
+        This link is ...<br>
+    </p>
+    <div class="bookmark-link">Link : <a href="#">www.aaa.com</a></div>
+</Section>
+
+<Section class="bookmark-item">
+    <h3>Book Mark 3</h3>
+    <p>
+        This link is ...<br>
+    </p>
+    <div class="bookmark-link">Link : <a href="#">www.aaa.com</a></div>
+</Section>
+
+<Section class="bookmark-item">
+    <h3>Book Mark 4</h3>
+    <p>
+        This link is ...<br>
+        
+    </p>
+    <div class="bookmark-link">Link : <a href="#">www.aaa.com</a></div>
+</Section>

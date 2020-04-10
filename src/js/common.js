@@ -1,4 +1,3 @@
-;
 function bringSidebarContent(path) {
     fetch(path).then(function(response) {
         response.text().then(function(text){
