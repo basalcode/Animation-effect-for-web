@@ -103,6 +103,14 @@ body {
 }
 
 /* main */
+.main-img {
+    width: 100%;
+    height: auto;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #main-content {
     width: 82%;
     
