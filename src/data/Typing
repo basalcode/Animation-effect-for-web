@@ -1,6 +1,9 @@
 <h1>Typing Effect</h1>
-<p>
+<p id='typing-effect' onload="">
     This is an example of how Typing effect works.
+    <script>
+        textWritingAnimation('typing-effect', document.querySelector(target).innerHTML);
+    </script>
 </p>
 <h1>Detail</h1>
 <p>
@@ -10,3 +13,4 @@
 <p>
     Space for JavaScript and CSS codes.
 </p>
+<script src="./src/js/typing.js"></script>
