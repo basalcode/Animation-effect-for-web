@@ -10,3 +10,8 @@
 <p>
     Space for JavaScript and CSS codes.
 </p>
+<script>
+    console.log('Hello');
+</script>
+
+typing.textWritingAnimation('#typing-effect', 'This is an example of how Typing effect works.');

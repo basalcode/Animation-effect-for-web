@@ -1,5 +1,7 @@
+import typing from '.';
+
 function bringSidebarContent(path) {
-    fetch(path).then(function(response) {
+    return fetch(path).then(function(response) {
         response.text().then(function(text){
             var sidebarObj = JSON.parse(text).sidebar;
             var sidebarHtml = '';
@@ -18,15 +20,19 @@ function bringSidebarContent(path) {
             }
             document.querySelector('#sidebar').innerHTML= sidebarHtml;
         })
-    })
+    });
 }
 
 function bringMainContent(path) {
-    fetch(path).then(function(response) {
+    return fetch(path).then(function(response) {
         response.text().then(function(text){
             document.querySelector('#main-content').innerHTML = text;
         })
-    })
+    });
+}
+
+function bringJSFile(path) {
+
 }
 
 // If there is hash address.
@@ -34,7 +40,7 @@ if (window.location.hash) {
     var fileName = window.location.hash.substr(2);
     bringSidebarContent('./src/data/sidebar.json');
     bringMainContent('./src/data/' + fileName);
-    typing.textWritingAnimation('#typing-effect', 'This is an example of how Typing effect works.');
+    bringJSFile(typing);
 } else { // If there is no hash address.
     bringSidebarContent('./src/data/sidebar.json');
     bringMainContent('./src/data/index');

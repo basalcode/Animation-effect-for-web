@@ -1,4 +1,4 @@
-class typing {
+export class typing {
     // Conduct textWriting animation with caret which common text editor has.
     textWritingAnimation(target, text) {
         console.log('Hello');
