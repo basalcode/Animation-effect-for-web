@@ -1,6 +1,5 @@
 <h1>Typing Effect</h1>
-<p id='typing-effect'>
-    This is an example of how Typing effect works.
+<p id='effect-field'>
 </p>
 <h1>Detail</h1>
 <p>
@@ -13,5 +12,3 @@
 <script>
     console.log('Hello');
 </script>
-
-typing.textWritingAnimation('#typing-effect', 'This is an example of how Typing effect works.');

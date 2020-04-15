@@ -1,5 +1,3 @@
-import typing from '.';
-
 function bringSidebarContent(path) {
     return fetch(path).then(function(response) {
         response.text().then(function(text){
@@ -27,12 +25,11 @@ function bringMainContent(path) {
     return fetch(path).then(function(response) {
         response.text().then(function(text){
             document.querySelector('#main-content').innerHTML = text;
+            var textWriting = document.querySelector('#effect-field');
+            var effectName = path.split('/');
+            textWritingAnimation(textWriting, `This is an example of how ${effectName[effectName.length - 1]} Effect works.`);
         })
     });
-}
-
-function bringJSFile(path) {
-
 }
 
 // If there is hash address.
@@ -40,7 +37,6 @@ if (window.location.hash) {
     var fileName = window.location.hash.substr(2);
     bringSidebarContent('./src/data/sidebar.json');
     bringMainContent('./src/data/' + fileName);
-    bringJSFile(typing);
 } else { // If there is no hash address.
     bringSidebarContent('./src/data/sidebar.json');
     bringMainContent('./src/data/index');
