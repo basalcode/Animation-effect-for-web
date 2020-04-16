@@ -25,9 +25,19 @@ function bringMainContent(path) {
     return fetch(path).then(function(response) {
         response.text().then(function(text){
             document.querySelector('#main-content').innerHTML = text;
-            var textWriting = document.querySelector('#effect-field');
-            var effectName = path.split('/');
-            textWritingAnimation(textWriting, `This is an example of how ${effectName[effectName.length - 1]} Effect works.`);
+            var effectField = document.querySelector('#effect-field');
+            var pathList = path.split('/');
+            var effectName = pathList[pathList.length - 1]; // Name of content data file.
+            
+            // Apply effect depending on effect.
+            switch (effectName) {
+            case 'Typing':
+                textWritingAnimation(effectField, `This is an example of how ${effectName} Effect works.`);
+                break;
+            case 'Rainbow':
+                rainbowObj.initEvent(effectField);
+                break;
+            }
         })
     });
 }
