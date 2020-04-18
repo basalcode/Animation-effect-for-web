@@ -2,7 +2,7 @@ var rainbowObj = {
     targetElement : null,
     eventStop : null,
     colorValue : 0,
-    initEvent : function (_target) {
+    initEvent : function(_target) {
         targetElement = _target;
         targetElement.addEventListener('mouseenter', this.rainbowColorOn); 
         targetElement.addEventListener('mouseout', this.rainbowColorOff);

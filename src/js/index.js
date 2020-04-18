@@ -37,6 +37,11 @@ function bringMainContent(path) {
             case 'Rainbow':
                 rainbowObj.initEvent(effectField);
                 break;
+            case 'Drop':
+                drop.dropInit(effectField);
+                break;
+            case 'Filp':
+                break;
             }
         })
     });
