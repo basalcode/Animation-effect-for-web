@@ -28,7 +28,6 @@ function bringMainContent(path) {
             var effectField = document.querySelector('#effect-field');
             var pathList = path.split('/');
             var effectName = pathList[pathList.length - 1]; // Name of content data file.
-            
             // Apply effect depending on effect.
             switch (effectName) {
             case 'Typing':
@@ -38,9 +37,12 @@ function bringMainContent(path) {
                 rainbowObj.initEvent(effectField);
                 break;
             case 'Drop':
+                console.log('drop');
                 drop.dropInit(effectField);
                 break;
-            case 'Filp':
+            case 'Flip':
+                console.log('flip');
+                flip.initFlip(effectField);
                 break;
             }
         })
