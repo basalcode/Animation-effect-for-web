@@ -6,14 +6,14 @@ function textWritingAnimation(target, text) {
     
     // About writing animation.
     var writePos = target.firstChild;
-    wirteOnElement(writePos, text);
+    writeOnElement(writePos, text);
 
     // About caret animation. 
     var caretPos = target.lastChild;
     caretOn(caretPos);
 
     // Conduct a writing animation
-    async function wirteOnElement(writePos, text) {
+    async function writeOnElement(writePos, text) {
         // Iterate every word in textList to write
         for (var i = 0; i < text.length; i++) {
             if (text[i] === ' ' && Math.random() * 5 < 1) {
