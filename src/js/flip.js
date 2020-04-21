@@ -11,7 +11,6 @@ var flip = {
     flipOn : function(event) {
         event.target.style.letterSpacing="-8px";
         event.target.style.transition="all 0.8s";
-        console.log('in');
     },
     flipOff : function(event) {
         event.target.style.letterSpacing="normal";
