@@ -11,7 +11,7 @@ function bringSidebarContent(path) {
                     sidebarHtml +=
                     `<a class="nav-item" 
                        href="#!${sidebarObj[i][j]}" 
-                       onclick="bringMainContent(${sidebarObj[i][j]});">
+                       onclick="bringMainContent('${sidebarObj[i][j]}');">
                        ${sidebarObj[i][j]}
                     </a>`;
                 }
@@ -34,7 +34,7 @@ function bringMainContent(effectName) {
             // Apply effect depending on effect.
             switch (effectName) {
             case 'Typing':
-                effectField.removeChild();
+                effectField.innerHTML = "";
                 textWritingAnimation(effectField, `This is an example of how ${effectName} Effect works.`);
                 break;
             case 'Rainbow':
