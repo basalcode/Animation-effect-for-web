@@ -55,8 +55,8 @@ function bringMainContent(effectName, path) {
                     embedCode(codeField, effectName);
                     break;
                 case 'Flip':
-                    embedCode(codeField, effectName);    
-                    flip.initFlip(effectField);
+                    flip.initFlip(effectField);    
+                    embedCode(codeField, effectName);
                     break;
                 }
             })
