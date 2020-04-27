@@ -1,6 +1,6 @@
 {
     "sidebar" : [
-        ["Font-Effect", "Rainbow", "Typing"],
-        ["Box-Effect", "Drop", "Flip"]
+        ["Font-Effect", "Rainbow", "Typing", "Flip"],
+        ["Box-Effect", "Drop", "FillColor"]
     ]
 }

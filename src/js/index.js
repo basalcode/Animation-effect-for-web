@@ -44,21 +44,21 @@ function bringMainContent(effectName, path) {
                 case 'Typing':
                     effectField.innerHTML = "";
                     textWritingAnimation(effectField, `This is an example of how ${effectName} Effect works.`);
-                    embedCode(codeField, effectName);
                     break;
                 case 'Rainbow':
                     rainbowObj.initEvent(effectField);
-                    embedCode(codeField, effectName);
                     break;
                 case 'Drop':
                     drop.dropInit(effectField);
-                    embedCode(codeField, effectName);
                     break;
                 case 'Flip':
                     flip.initFlip(effectField);    
-                    embedCode(codeField, effectName);
+                    break;
+                case 'FillColor':
+                    
                     break;
                 }
+                embedCode(codeField, effectName);
             })
         });
     } else {
