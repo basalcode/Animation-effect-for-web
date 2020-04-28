@@ -1,17 +1,15 @@
 var drop = {
     target : null,
-    dropInit : function(_target) {
+    init : function(_target) {
         this.target = _target;
-        this.target.addEventListener('mouseenter', this.dropOn);
-        this.target.addEventListener('mouseout', this.dropOff);
+        this.target.addEventListener('mouseenter', this.on);
+        this.target.addEventListener('mouseout', this.off);
     },
-    dropOn : function(event) {
-        console.log('in');
+    on : function(event) {
         event.target.style.position = "relative";
         event.target.style.top = "-50px";
     },
-    dropOff : function(event) {
-        console.log('off');
+    off : function(event) {
         event.target.style.transition = "top 1s"
         event.target.style.top = "0px";
     }

@@ -32,13 +32,6 @@ function bringMainContent(effectName, path) {
                 for (var i = 0; i < effectNameList.length; i++) {
                     effectNameList[i].innerHTML = effectName;
                 }
-                /* fectch('./src/data/Typing').then(function(response) {
-                    response.text().then(function(text){
-
-                    });
-                } */
-                
-
                 // Apply effect depending on effect.
                 switch (effectName) {
                 case 'Typing':
@@ -46,16 +39,16 @@ function bringMainContent(effectName, path) {
                     textWritingAnimation(effectField, `This is an example of how ${effectName} Effect works.`);
                     break;
                 case 'Rainbow':
-                    rainbowObj.initEvent(effectField);
+                    rainbowObj.init(effectField);
                     break;
                 case 'Drop':
-                    drop.dropInit(effectField);
+                    drop.init(effectField);
                     break;
                 case 'Flip':
-                    flip.initFlip(effectField);    
+                    flip.init(effectField);    
                     break;
                 case 'FillColor':
-                    
+                    fillColor.init(effectField);
                     break;
                 }
                 embedCode(codeField, effectName);
