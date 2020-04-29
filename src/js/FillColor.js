@@ -5,11 +5,11 @@ var fillColor = {
         this.target.addEventListener('mouseenter', this.on);
         this.target.addEventListener('mouseout', this.off);
     },
-    on : function(event) {
+    /* on : function(event) {
         event.target.style.animation = "animate-in 0.5s 1"
         event.target.style.animationFillMode = "forwards";
     },
     off : function(event) {
-
-    }
+        
+    } */
 }
