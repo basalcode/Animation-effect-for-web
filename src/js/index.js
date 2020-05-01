@@ -48,6 +48,7 @@ function bringMainContent(effectName, path) {
                     flip.init(effectField);    
                     break;
                 case 'FillColor':
+                    effectField.innerHTML += `<link rel="stylesheet" href="./src/css/fillColor.css"></link>`
                     fillColor.init(effectField);
                     break;
                 }
