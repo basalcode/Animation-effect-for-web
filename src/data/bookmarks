@@ -2,11 +2,11 @@
 <h2>BOOK MARKS</h2>
 
 <Section class="bookmark-item">
-    <h3>Book Mark 1</h3>
+    <h3>GitHub</h3>
     <p>
-        This link is ...<br>
+        BasalCode GitHub Link<br>
     </p>
-    <div class="bookmark-link">Link : <a href="#">www.aaa.com</a></div>
+    <div class="bookmark-link">Link : <a href="https://github.com/basalcode/Animation-effect-for-web">GitHub</a></div>
 </Section>
 
 <Section class="bookmark-item">

@@ -68,7 +68,11 @@ function bringMainContent(effectName, path) {
 if (window.location.hash) {
     var effectName = window.location.hash.substr(2);
     bringSidebarContent('./src/data/sidebar.json');
-    bringMainContent(effectName);
+    if (effectName != 'index' && effectName != 'bookmarks') {
+        bringMainContent(effectName);
+    } else {
+        bringMainContent('', `./src/data/${effectName}`)
+    }
 } else { // If there is no hash address.
     bringSidebarContent('./src/data/sidebar.json');
     bringMainContent('', './src/data/index');
